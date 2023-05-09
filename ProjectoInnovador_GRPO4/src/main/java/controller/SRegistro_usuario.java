@@ -20,7 +20,7 @@ public class SRegistro_usuario extends HttpServlet {
     public Statement sen;
     public ResultSet data;
     public String driver="com.mysql.cj.jdbc.Driver";
-    public String cadena="jdbc:mysql://localhost/ProyectoIntegrador";///base de datos
+    public String cadena="jdbc:mysql://localhost/ProyectoIntegrador";///base de datos crearla asi
     public String usuario="root";
     public String clave="";
     
