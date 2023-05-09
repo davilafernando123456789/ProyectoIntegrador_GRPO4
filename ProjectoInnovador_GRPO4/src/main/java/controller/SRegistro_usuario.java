@@ -50,7 +50,7 @@ public class SRegistro_usuario extends HttpServlet {
         }catch(SQLException e5) {
             JOptionPane.showMessageDialog(null, "error en la consulta");
         }
-        response.sendRedirect("SLista_producto");
+        response.sendRedirect("SMenu_usuario");
     }
     public void conectar() {
         try {
