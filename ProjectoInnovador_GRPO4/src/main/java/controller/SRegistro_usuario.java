@@ -12,7 +12,7 @@ import java.sql.Statement;
 
 import javax.swing.JOptionPane;
 
-import java.sql.*;
+import java.sql.*;//
 
 @WebServlet("/SRegistro_producto")
 public class SRegistro_usuario extends HttpServlet {
