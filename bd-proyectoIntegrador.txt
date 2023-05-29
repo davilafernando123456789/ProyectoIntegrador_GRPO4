@@ -1,0 +1,73 @@
+CREATE DATABASE proyectointegrador;
+USE 'proyectointegrador';
+------------------------------------------------
+CREATE TABLE 'usuario' (
+  'idUsuario' int NOT NULL,
+  'nombres' varchar (80) NOT NULL,
+  'apellidos' varchar (80) NOT NULL,
+  'correo' varchar (50) NOT NULL,
+  'contraseña' varchar (10) NOT NULL,
+   PRIMARY KEY (`idUsuario`)
+)
+-----------------------------------------------
+CREATE TABLE 'curso' (
+  'idCurso' int NOT NULL,
+  'nombre' varchar (80) NOT NULL,
+  'descripcion' varchar (200) NOT NULL,
+   PRIMARY KEY ('idCurso ') 
+)
+-----------------------------------------------
+CREATE TABLE 'modulo' (
+  'idModulo' int NOT NULL,
+  'nombre' varchar (80) NOT NULL,
+  'descripcion' varchar (200) NOT NULL,
+   PRIMARY KEY ('idModulo') 
+)
+-----------------------------------------------
+CREATE TABLE 'tema' (
+  'idTema' int NOT NULL,
+  'nombre' varchar (80) NOT NULL,
+  'descripcion' varchar (200) NOT NULL,
+    PRIMARY KEY ('idModulo ')  
+)
+-----------------------------------------------
+CREATE TABLE 'resumen' (
+  'idResumen' int NOT NULL,
+  'titulo' varchar (40) COLLATE NOT NULL,
+  'descripcion' varchar (200) NOT NULL,
+  'conceptos_clave' varchar(150)   NOT NULL,
+   PRIMARY KEY ('idResumen'),
+  ) 
+-----------------------------------------------
+CREATE TABLE 'contenido' (
+  'idContenido' int NOT NULL,
+  'nombre' varchar (150) NOT NULL,
+  'descripcion' varchar (200) NOT NULL,
+  'enlace' varchar (40)  NOT NULL,
+   PRIMARY KEY ('idContenido '),
+)
+-------------------------------------------------
+CREATE TABLE `comentario` (
+  `idComentario` int NOT NULL,
+  `contenido` varchar (150) NOT NULL,
+  `fecha` date NOT NULL,
+  `usuario` varchar (150) NOT NULL,
+  PRIMARY KEY (`idComentario `)
+)
+--------------------------------------------------
+CREATE TABLE 'pregunta' (
+  'idPregunta' int NOT NULL,
+  'contenido' varchar (150) NOT NULL,
+  'fecha' date NOT NULL,
+  'nom_usuario' varchar (40) NOT NULL,
+PRIMARY KEY ('idPregunta ')
+)
+---------------------------------------------------
+CREATE TABLE 'respuesta' (
+  'idRespuesta' int NOT NULL,
+  'contenido' varchar (150) NOT NULL,
+  'fecha' date NOT NULL,
+  'nom_usuario' varchar (40) NOT NULL,
+   PRIMARY KEY ('idRespuesta ')
+)
+
